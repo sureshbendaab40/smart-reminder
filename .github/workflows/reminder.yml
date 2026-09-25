@@ -1,0 +1,12 @@
+name: Smart Reminder
+
+on:
+  workflow_dispatch:
+
+jobs:
+  reminder:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Run reminder
+        run: python -c "print('Smart Reminder is working!')"
