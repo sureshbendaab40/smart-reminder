@@ -18,5 +18,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Run reminder
-        run: echo "🔔 Smart Reminder is working!"
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Send reminder email
+        env:
+          EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
+          EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
+          EMAIL_TO: sureshbendaab40@gmail.com
+        run: python reminder.py
