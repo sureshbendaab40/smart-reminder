@@ -26,4 +26,5 @@ jobs:
           EMAIL_USERNAME: ${{ secrets.EMAIL_USERNAME }}
           EMAIL_APP_PASSWORD: ${{ secrets.EMAIL_APP_PASSWORD }}
           EMAIL_TO: sureshbendaab40@gmail.com
+          SCHEDULE: ${{ github.event.schedule }}
         run: python reminder.py
