@@ -7,18 +7,25 @@ password = os.environ["EMAIL_APP_PASSWORD"]
 receiver = os.environ["EMAIL_TO"]
 
 msg = EmailMessage()
-msg["Subject"] = "🚨 SMART REMINDER — CHECK YOUR REMINDER 🚨"
+msg["Subject"] = "🚨🔥 STREAK ALERT — LINKEDIN GAME KAR LE 🔥🚨"
 msg["From"] = sender
 msg["To"] = receiver
 
 msg.set_content("""
-🔔 SMART REMINDER
+🚨🚨 SMART REMINDER 🚨🚨
 
-Bhai, ye tumhara scheduled reminder hai.
+BHAI, RUK MAT! 😭🔥
 
-⏰ Time ho gaya hai — apna important task check kar lo.
+🎮 LinkedIn game/streak check kar le.
+🔥 Apni streak bachani hai!
 
-🔥 Smart Reminder System
+⏰ Ye automatic Smart Reminder hai.
+☁️ Laptop OFF hone par bhi GitHub se reminder aa jayega.
+
+━━━━━━━━━━━━━━━━━━━━
+💪 STAY CONSISTENT
+🔥 DON'T BREAK THE STREAK
+━━━━━━━━━━━━━━━━━━━━
 """)
 
 with smtplib.SMTP("smtp.gmail.com", 587) as server:
