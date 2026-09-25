@@ -3,10 +3,20 @@ name: Smart Reminder
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '0 22 * * *'
+      timezone: 'Asia/Kolkata'
+
+    - cron: '30 0 * * *'
+      timezone: 'Asia/Kolkata'
+
+    - cron: '30 18 * * *'
+      timezone: 'Asia/Kolkata'
+
 jobs:
   reminder:
     runs-on: ubuntu-latest
 
     steps:
       - name: Run reminder
-        run: python -c "print('Smart Reminder is working!')"
+        run: echo "🔔 Smart Reminder is working!"
