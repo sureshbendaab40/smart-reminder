@@ -33,17 +33,17 @@ Apni streak bachani hai.
 ⏰ Smart Reminder — 10:00 PM
 """
 
-elif schedule == "30 0 * * *":
-    subject = "🔥 LAST CALL — STREAK BACHA LE 🔥"
+elif schedule == "30 12 * * *":
+    subject = "🔥 STREAK CHECK — LINKEDIN GAME KAR LE 🔥"
     message = """
-🔥🔥 LAST CALL 🔥🔥
+🔥 STREAK CHECK 🔥
 
-Bhai, ab last reminder hai! 😭
+Bhai, dopahar ho gayi! 😄
 
-🎮 LinkedIn game kar le.
+🎮 LinkedIn game/streak check kar le.
 🔥 Streak bachani hai!
 
-⏰ Smart Reminder — 12:30 AM
+⏰ Smart Reminder — 12:30 PM
 """
 
 else:
