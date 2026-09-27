@@ -7,7 +7,7 @@ on:
     - cron: '0 22 * * *'
       timezone: 'Asia/Kolkata'
 
-    - cron: '30 0 * * *'
+    - cron: '30 12 * * *'
       timezone: 'Asia/Kolkata'
 
     - cron: '30 18 * * *'
